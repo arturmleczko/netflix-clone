@@ -1,7 +1,9 @@
 import { FC } from 'react';
 
+import Jumbotrons from './components/Jumbotrons/Jumbotrons';
+
 const App: FC = () => {
-	return <p>Hello</p>;
+	return <Jumbotrons />;
 };
 
 export default App;
