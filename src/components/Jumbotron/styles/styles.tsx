@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 import { IInner } from './interfaces';
 
+import { colors } from '../../../styledHelpers/colors';
+
 export const Container = styled.section``;
 
 export const Image = styled.img`
@@ -21,6 +23,14 @@ export const Inner = styled.div<IInner>`
 	@media (max-width: 1000px) {
 		flex-direction: column;
 	}
+`;
+
+export const Item = styled.div`
+	display: flex;
+	padding: 50px 5%;
+	border-bottom: 8px solid ${colors.darkGrey};
+	color: white;
+	overflow: hidden;
 `;
 
 export const Pane = styled.div`

@@ -1,12 +1,12 @@
 import { FC } from 'react';
 
-import Jumbotron from './Jumbotron/Jumbotron';
+import Jumbotron from '../../components/Jumbotron/Jumbotron';
 
 import { Container } from './styles/styles';
 
 import jumboData from '../../fixtures/jumbo.json';
 
-const Jumbotrons: FC = () => {
+const JumbotronContainer: FC = () => {
 	return (
 		<Container>
 			{jumboData.map(({ id, direction, title, subTitle, image, alt }) => (
@@ -23,4 +23,4 @@ const Jumbotrons: FC = () => {
 	);
 };
 
-export default Jumbotrons;
+export default JumbotronContainer;

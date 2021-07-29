@@ -1,9 +1,9 @@
 import { FC } from 'react';
 
-import Jumbotrons from './components/Jumbotrons/Jumbotrons';
+import JumbotronContainer from './containers/JumbotronContainer/JumbotronContainer';
 
 const App: FC = () => {
-	return <Jumbotrons />;
+	return <JumbotronContainer />;
 };
 
 export default App;
